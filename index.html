@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Gorter • Systems Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="logo">LG</div>
+    <nav class="site-nav">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" data-reveal>
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow hero-eyebrow">Louis Gorter · Systems Engineer</p>
+        <h1>Hardware calm. Software certain.</h1>
+        <p class="lede">
+          I design IoT systems that blend precise sensing, low-power connectivity, and elegant interfaces for conservation teams.
+          Every build is tuned like a MacBook launch: meticulous, minimal, and obsessively reliable.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Start a project</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/louisgorter" target="_blank" rel="noopener">View LinkedIn</a>
+        </div>
+        <div class="hero-specs">
+          <div>
+            <span class="spec-label">Accuracy</span>
+            <span class="spec-value">&lt;20 m LoRaWAN telemetry</span>
+          </div>
+          <div>
+            <span class="spec-label">Runtime</span>
+            <span class="spec-value">Months-long field deployments</span>
+          </div>
+          <div>
+            <span class="spec-label">Stack</span>
+            <span class="spec-value">GCP • Terraform • React • STM32</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal style="--reveal-delay: 0.12s;">
+        <div class="hero-device">
+          <div class="device-screen">
+            <div class="screen-header">
+              <span>Telemetry · Live</span>
+              <span>Sea Turtle Tag</span>
+            </div>
+            <div class="screen-graph">
+              <div class="graph-line"></div>
+            </div>
+            <div class="screen-footer">
+              <span>LoRa uplinks</span>
+              <span>12,480 km range</span>
+            </div>
+          </div>
+          <div class="device-base"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education" data-reveal>
+      <div class="section-header">
+        <p class="eyebrow">Education</p>
+        <h2>Grounded in systems thinking and inclusive design.</h2>
+      </div>
+      <div class="education-grid">
+        <article>
+          <h3>UCL, University College London</h3>
+          <p class="meta">MSc Systems Engineering for the Internet of Things · Expected Sept 2026</p>
+          <p class="content">Exploring embedded systems, multi-agent systems, sensor networks, and inclusive design for ubiquitous computing.</p>
+        </article>
+        <article>
+          <h3>Cardiff University</h3>
+          <p class="meta">BSc Computer Science (First Class) · 2021–2025</p>
+          <p class="content">Coursework across AI, secure communication networks, computational mathematics, databases, informatics, and IoT.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" data-reveal>
+      <div class="section-header">
+        <p class="eyebrow">Experience</p>
+        <h2>Hands-on delivery across cloud, UI, and embedded stacks.</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <div class="timeline-meta">
+            <h3>Holiday Extras · Intern</h3>
+            <span>2022</span>
+          </div>
+          <ul>
+            <li>Scaled and automated Google Cloud Platform infrastructure with Terraform.</li>
+            <li>Built accessible React UI components and supported manual testing for mobile + web.</li>
+            <li>Maintained CI/CD pipelines in GitHub Actions, keeping shipping velocity high.</li>
+            <li>Worked across Docker, Kubernetes, and cross-functional engineering squads.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="timeline-meta">
+            <h3>Wildlife Tracking Research</h3>
+            <span>2024–2025</span>
+          </div>
+          <ul>
+            <li>Designed LoRaWAN-based sea turtle tracking tags on STM32, GNSS, and wet/dry sensors.</li>
+            <li>Implemented FlowFuse (Node-RED) backends with u-blox CloudLocate for efficient decoding.</li>
+            <li>Validated sub-20m accuracy while staying within $200 hardware budget constraints.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" data-reveal>
+      <div class="section-header">
+        <p class="eyebrow">Projects</p>
+        <h2>Prototyping conservation hardware that scales to the cloud.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <header>
+            <p class="meta">LoRaWAN · GNSS · STM32</p>
+            <h3>Wildlife Tracking Tag</h3>
+          </header>
+          <p>Marine tracker enabling long-range positioning for sea turtles with The Things Network uplinks, FlowFuse orchestration, and u-blox CloudLocate assisted GNSS.</p>
+          <ul>
+            <li>Reduced satellite costs from $1000s to &lt;$200 end-to-end.</li>
+            <li>Achieved &lt;20m accuracy in 75% of trials.</li>
+            <li>Cloud-connected pipeline from sensor to dashboard.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section leadership" id="leadership" data-reveal>
+      <div class="section-header">
+        <p class="eyebrow">Leadership & Service</p>
+        <h2>Building teams that act on climate and conservation.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <header>
+            <p class="meta">Harnas Wildlife Sanctuary · Namibia</p>
+            <h3>Volunteer Team Leader</h3>
+          </header>
+          <p>Coordinated multicultural volunteer teams for habitat restoration, enrichment, and veterinary support.</p>
+          <ul>
+            <li>Owned daily schedules, task orchestration, and stakeholder comms.</li>
+            <li>Drove conservation projects from trail maintenance to community outreach.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split skills" data-reveal>
+      <article>
+        <p class="eyebrow">Toolbox</p>
+        <h2>Technologies I reach for.</h2>
+        <div class="pill-list">
+          <span>GCP</span>
+          <span>Terraform</span>
+          <span>React</span>
+          <span>Node-RED / FlowFuse</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>LoRaWAN</span>
+          <span>STM32</span>
+          <span>u-blox CloudLocate</span>
+        </div>
+      </article>
+      <article>
+        <p class="eyebrow">Focus Areas</p>
+        <h2>Where I add value.</h2>
+        <ul class="focus-list">
+          <li>IoT architecture spanning sensors, LPWAN connectivity, and cloud ingest.</li>
+          <li>Human-centered UI for operations tooling.</li>
+          <li>CI/CD and code review practices that keep teams shipping safely.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact" data-reveal>
+    <div>
+      <p class="eyebrow">Stay in touch</p>
+      <h2>Let’s build responsible tech for real environments.</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:louisgorter@gmail.com">louisgorter@gmail.com</a>
+      <a href="tel:+447883842704">+44 7883 842 704</a>
+      <a href="https://www.linkedin.com/in/louisgorter" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
